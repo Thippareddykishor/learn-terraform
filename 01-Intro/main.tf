@@ -36,3 +36,11 @@ output "z" {
   value = "Name ${var.z["name"]} Age ${var.z.age}" 
 }
 
+# varaibles from another files
+#tfvars manually loaded
+
+variable "input" {}
+
+output "input" {
+  value = var.input
+}

@@ -30,3 +30,21 @@ output "y1" {
 output "z1" {
   value = "Name ${var.z["name"]},  Age ${var.z.age}"
 }
+
+#tfvars
+variable "input" {}
+
+output "input" {
+  value = var.input
+}
+
+#auto tf vars
+variable "class" {}
+output "class" {
+  value = var.class
+}
+
+variable "trainer" {}
+output "trainer" {
+  value = var.trainer
+}

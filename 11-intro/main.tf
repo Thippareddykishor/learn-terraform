@@ -6,3 +6,15 @@ resource "local_file" "foo" {
   content = "test"
   filename = "foo.bar"
 }
+
+variable "x" {
+  default = 10
+}
+
+output "x" {
+  value = var.x
+}
+
+output "x1" {
+  value = "value of x -${var.x}"
+}
